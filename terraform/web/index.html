@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trình chiếu video HSL</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <h1>VoD Streaming Media</h1>
+    <div id="myName">Nguyễn Quốc Khang</div>
+  </header>
+  <div id="videoContainer">
+    <div id="videoPlayer"></div>
+    <div id="videoList"></div>
+    <div class="videoControls">
+      <button id="playPauseButton">Play</button>
+      <button id="previousButton">Previous</button>
+      <button id="nextButton">Next</button>
+      <select id="qualitySelector"></select>
+      <button id="shareButton">Share</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

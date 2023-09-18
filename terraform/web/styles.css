@@ -1,0 +1,124 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Video player container */
+#videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#myName {
+  font-size: 24px;
+}
+
+/* Video list container */
+#videoListContainer {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Video list styles */
+#videoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5px;
+  font-size: 20px;
+  flex: 0 0 calc(33.33% - 20px);
+}
+
+li:hover {
+  transform: scale(1.1);
+  background-color: #ccc;
+}
+
+/* Video player styles */
+#videoPlayerContainer {
+  width: 100%;
+  max-width: 800px;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 0 auto; /* Center the video */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f4f1f1;
+}
+
+#videoPlayer {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Video controls styles */
+.videoControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+select {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#shareButton {
+  background-color: #4caf50;
+}
+
+#shareButton:hover {
+  background-color: #45a049;
+}
